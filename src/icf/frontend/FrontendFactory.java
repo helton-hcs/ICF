@@ -1,9 +1,9 @@
 package icf.frontend;
 
-import icf.frontend.pascal.PascalLexer;
-import icf.frontend.pascal.PascalTopDownParser;
 import icf.frontend.types.LanguageType;
 import icf.frontend.types.ParserType;
+import language.pascal.frontend.PascalLexer;
+import language.pascal.frontend.PascalTopDownParser;
 
 public class FrontendFactory {
 

@@ -2,14 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f20e2732-f417-4ce4-8b32-6caf5b75ac2e" name="Default" comment="Added Pascal command-line tool.&#10;Added resources folder">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/language/Pascal.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/language/pascal/hello.pas" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/icf/backend/Backend.java" afterPath="$PROJECT_DIR$/src/icf/backend/Backend.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/icf/backend/compiler/CodeGenerator.java" afterPath="$PROJECT_DIR$/src/icf/backend/compiler/CodeGenerator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/icf/backend/interpreter/Executor.java" afterPath="$PROJECT_DIR$/src/icf/backend/interpreter/Executor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/icf/message/Message.java" afterPath="$PROJECT_DIR$/src/icf/message/Message.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/icf/backend/OperationType.java" afterPath="$PROJECT_DIR$/src/icf/backend/OperationType.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/icf/frontend/Parser.java" afterPath="$PROJECT_DIR$/src/icf/frontend/Parser.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/language/pascal/frontend/PascalErrorCode.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/language/pascal/frontend/PascalErrorHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/language/pascal/frontend/tokens/PascalErrorToken.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/language/pascal/frontend/PascalToken.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/language/pascal/frontend/PascalTokenType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/language/pascal/scannerTest.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/icf/frontend/pascal/PascalLexer.java" afterPath="$PROJECT_DIR$/src/language/pascal/frontend/PascalLexer.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/icf/frontend/pascal/PascalTopDownParser.java" afterPath="$PROJECT_DIR$/src/language/pascal/frontend/PascalTopDownParser.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/language/Pascal.java" afterPath="$PROJECT_DIR$/src/language/pascal/Pascal.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/icf/frontend/FrontendFactory.java" afterPath="$PROJECT_DIR$/src/icf/frontend/FrontendFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/icf/frontend/Token.java" afterPath="$PROJECT_DIR$/src/icf/frontend/Token.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ICF.iws" />
@@ -74,29 +77,111 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Pascal.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/language/Pascal.java">
+      <file leaf-file-name="Pascal.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/language/pascal/Pascal.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="0" selection-start="643" selection-end="643" vertical-scroll-proportion="0.24918033" vertical-offset="38" max-vertical-offset="2926">
+            <state line="68" column="54" selection-start="2648" selection-end="2648" vertical-scroll-proportion="0.0" vertical-offset="811" max-vertical-offset="4275">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Token.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/icf/frontend/Token.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="34" column="0" selection-start="846" selection-end="846" vertical-scroll-proportion="0.0" vertical-offset="516" max-vertical-offset="1159">
+              <folding>
+                <element signature="e#878#879#0" expanded="true" />
+                <element signature="e#905#906#0" expanded="true" />
+                <element signature="e#938#939#0" expanded="true" />
+                <element signature="e#967#968#0" expanded="true" />
+                <element signature="e#999#1000#0" expanded="true" />
+                <element signature="e#1027#1028#0" expanded="true" />
+                <element signature="e#1061#1062#0" expanded="true" />
+                <element signature="e#1094#1095#0" expanded="true" />
+                <element signature="e#1126#1127#0" expanded="true" />
+                <element signature="e#1157#1158#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PascalTopDownParser.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/language/pascal/frontend/PascalTopDownParser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="20" selection-start="474" selection-end="474" vertical-scroll-proportion="0.0" vertical-offset="267" max-vertical-offset="1330">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CodeGenerator.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/icf/backend/compiler/CodeGenerator.java">
+      <file leaf-file-name="PascalTokenType.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/language/pascal/frontend/PascalTokenType.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="13" selection-start="254" selection-end="254" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="627">
+            <state line="43" column="5" selection-start="1435" selection-end="1435" vertical-scroll-proportion="0.0" vertical-offset="742" max-vertical-offset="1330">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1405#1406#0" expanded="true" />
+                <element signature="e#1434#1435#0" expanded="true" />
+                <element signature="e#1560#1568#0" expanded="true" />
+                <element signature="e#1893#1918#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PascalErrorHandler.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/language/pascal/frontend/PascalErrorHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="20" selection-start="358" selection-end="358" vertical-scroll-proportion="0.0" vertical-offset="191" max-vertical-offset="1026">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#302#303#0" expanded="true" />
+                <element signature="e#335#336#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PascalErrorCode.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/language/pascal/frontend/PascalErrorCode.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="27" selection-start="62" selection-end="62" vertical-scroll-proportion="0.0" vertical-offset="1083" max-vertical-offset="1767">
+              <folding>
+                <element signature="e#2974#2975#0" expanded="true" />
+                <element signature="e#3003#3004#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PascalErrorToken.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/language/pascal/frontend/tokens/PascalErrorToken.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="27" selection-start="69" selection-end="69" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="513">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hello.pas" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/language/pascal/hello.pas">
+      <file leaf-file-name="PascalLexer.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/language/pascal/frontend/PascalLexer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="3" selection-start="64" selection-end="64" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
+            <state line="11" column="39" selection-start="318" selection-end="318" vertical-scroll-proportion="0.10714286" vertical-offset="51" max-vertical-offset="1102">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PascalToken.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/language/pascal/frontend/PascalToken.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="0" selection-start="34" selection-end="34" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="342">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -114,7 +199,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/icf/frontend/Token.java" />
         <option value="$PROJECT_DIR$/src/icf/frontend/EofToken.java" />
         <option value="$PROJECT_DIR$/src/icf/message/MessageListener.java" />
         <option value="$PROJECT_DIR$/src/icf/message/MessageType.java" />
@@ -148,6 +232,18 @@
         <option value="$PROJECT_DIR$/src/icf/backend/interpreter/Executor.java" />
         <option value="$PROJECT_DIR$/src/Pascal.java" />
         <option value="$PROJECT_DIR$/src/language/Pascal.java" />
+        <option value="$PROJECT_DIR$/src/icf/frontend/TokenValue.java" />
+        <option value="$PROJECT_DIR$/src/icf/frontend/Token.java" />
+        <option value="$PROJECT_DIR$/resources/language/pascal/scannerTest.txt" />
+        <option value="$PROJECT_DIR$/src/language/pascal/frontend/PascalErrorCode.java" />
+        <option value="$PROJECT_DIR$/src/language/pascal/frontend/tokens/PascalErrorTokeb.java" />
+        <option value="$PROJECT_DIR$/src/language/pascal/frontend/PascalToken.java" />
+        <option value="$PROJECT_DIR$/src/language/pascal/frontend/PascalErrorHandler.java" />
+        <option value="$PROJECT_DIR$/src/language/pascal/frontend/PascalTopDownParser.java" />
+        <option value="$PROJECT_DIR$/src/language/pascal/Pascal.java" />
+        <option value="$PROJECT_DIR$/src/language/pascal/frontend/PascalTokenType.java" />
+        <option value="$PROJECT_DIR$/src/language/pascal/frontend/tokens/PascalErrorToken.java" />
+        <option value="$PROJECT_DIR$/src/language/pascal/frontend/PascalLexer.java" />
       </list>
     </option>
   </component>
@@ -241,7 +337,55 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="language" />
+              <option name="myItemId" value="pascal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ICF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ICF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pascal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ICF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ICF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pascal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tokens" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -260,6 +404,128 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="icf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="middleware" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ICF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ICF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="icf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="message" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ICF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ICF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="icf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ICF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ICF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="icf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ICF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ICF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="icf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="interpreter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ICF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ICF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="icf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="compiler" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -562,7 +828,7 @@
       <workItem from="1419805993460" duration="6160000" />
       <workItem from="1419812202062" duration="390000" />
       <workItem from="1419812747288" duration="194000" />
-      <workItem from="1419817287594" duration="444000" />
+      <workItem from="1419817287594" duration="4026000" />
     </task>
     <task id="LOCAL-00001" summary="Added frontend and backend factories&#10;Added base Pascal lexer and parser">
       <created>1419812338057</created>
@@ -572,24 +838,29 @@
       <created>1419813202707</created>
       <updated>1419813202707</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added Pascal command-line tool.&#10;Added resources folder">
+      <created>1419817763577</created>
+      <updated>1419817763577</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14187000" />
+    <option name="totallyTimeSpent" value="17769000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-4" width="1922" height="1085" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Tool Output" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32943678" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32838982" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32943678" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -597,10 +868,10 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32943678" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32838982" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32837406" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -608,7 +879,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32943678" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -625,7 +895,8 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="Added frontend and backend factories&#10;Added base Pascal lexer and parser" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added frontend and backend factories&#10;Added base Pascal lexer and parser" />
+    <MESSAGE value="Added Pascal command-line tool.&#10;Added resources folder" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Pascal command-line tool.&#10;Added resources folder" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -636,13 +907,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/language/Pascal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="27" selection-start="189" selection-end="189" vertical-scroll-proportion="0.0" vertical-offset="95" max-vertical-offset="3135">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/icf/backend/compiler/CodeGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="13" selection-start="254" selection-end="254" vertical-scroll-proportion="0.0" vertical-offset="190" max-vertical-offset="627">
@@ -657,7 +921,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/icf/frontend/pascal/PascalTopDownParser.java">
+    <entry file="file://$PROJECT_DIR$/src/language/pascal/frontend/PascalTopDownParser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="0" selection-start="599" selection-end="917" vertical-scroll-proportion="0.0" vertical-offset="437" max-vertical-offset="874">
           <folding />
@@ -680,7 +944,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/icf/backend/interpreter/Executor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="238" selection-end="238" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646" />
+        <state line="9" column="0" selection-start="238" selection-end="238" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/icf/backend/BackendFactory.java">
@@ -704,7 +970,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/icf/frontend/pascal/PascalTopDownParser.java">
+    <entry file="file://$PROJECT_DIR$/src/language/pascal/frontend/PascalTopDownParser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="0" selection-start="599" selection-end="917" vertical-scroll-proportion="0.0" vertical-offset="437" max-vertical-offset="874">
           <folding />
@@ -720,7 +986,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/icf/backend/interpreter/Executor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="238" selection-end="238" vertical-scroll-proportion="0.0" vertical-offset="171" max-vertical-offset="646" />
+        <state line="9" column="0" selection-start="238" selection-end="238" vertical-scroll-proportion="0.0" vertical-offset="171" max-vertical-offset="646">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/icf/backend/BackendFactory.java">
@@ -768,8 +1036,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="0" selection-start="22" selection-end="22" vertical-scroll-proportion="0.0" vertical-offset="19" max-vertical-offset="798">
           <folding>
-            <element signature="e#874#875#0" expanded="true" />
-            <element signature="e#907#908#0" expanded="true" />
+            <element signature="e#878#879#0" expanded="true" />
+            <element signature="e#905#906#0" expanded="true" />
+            <element signature="e#938#939#0" expanded="true" />
+            <element signature="e#967#968#0" expanded="true" />
+            <element signature="e#999#1000#0" expanded="true" />
+            <element signature="e#1027#1028#0" expanded="true" />
+            <element signature="e#1061#1062#0" expanded="true" />
+            <element signature="e#1094#1095#0" expanded="true" />
+            <element signature="e#1126#1127#0" expanded="true" />
+            <element signature="e#1157#1158#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -788,26 +1064,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/icf/frontend/TokenType.java">
+    <entry file="file://$PROJECT_DIR$/src/icf/message/MessageType.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="54" selection-end="54" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="190">
+        <state line="0" column="20" selection-start="20" selection-end="20" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="920">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/icf/message/MessageType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="20" selection-start="20" selection-end="20" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="920" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/icf/middleware/SymbolTable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="1" selection-start="57" selection-end="57" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="190" />
+        <state line="3" column="1" selection-start="57" selection-end="57" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="190">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/icf/middleware/IntermediateCode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="63" selection-end="63" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="190" />
+        <state line="4" column="0" selection-start="63" selection-end="63" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="190">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/icf/message/MessageListener.java">
@@ -832,21 +1107,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/icf/frontend/Token.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="57" selection-end="57" vertical-scroll-proportion="0.062159214" vertical-offset="0" max-vertical-offset="917">
-          <folding>
-            <element signature="e#874#875#0" expanded="true" />
-            <element signature="e#907#908#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/icf/frontend/pascal/PascalLexer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="386" selection-end="386" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="608" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/icf/frontend/types/LanguageType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="0" selection-start="70" selection-end="70" vertical-scroll-proportion="0.10359869" vertical-offset="0" max-vertical-offset="917">
@@ -856,26 +1116,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/icf/frontend/types/ParserType.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="18" selection-start="18" selection-end="18" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="228" />
+        <state line="0" column="18" selection-start="18" selection-end="18" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="228">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/icf/frontend/Source.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="0" selection-start="459" selection-end="502" vertical-scroll-proportion="0.31079608" vertical-offset="0" max-vertical-offset="1843">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/icf/frontend/FrontendFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="37" selection-start="100" selection-end="100" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="551">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/icf/backend/BackendFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="137" selection-end="137" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="475">
           <folding />
         </state>
       </provider>
@@ -887,21 +1135,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/icf/frontend/pascal/PascalTopDownParser.java">
+    <entry file="file://$PROJECT_DIR$/src/icf/backend/interpreter/Executor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="12" selection-start="215" selection-end="215" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="779">
+        <state line="9" column="0" selection-start="238" selection-end="238" vertical-scroll-proportion="0.15650742" vertical-offset="0" max-vertical-offset="607">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/icf/backend/interpreter/Executor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="238" selection-end="238" vertical-scroll-proportion="0.15650742" vertical-offset="0" max-vertical-offset="607" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/icf/message/Message.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="23" selection-start="98" selection-end="98" vertical-scroll-proportion="0.12520593" vertical-offset="0" max-vertical-offset="607" />
+        <state line="4" column="23" selection-start="98" selection-end="98" vertical-scroll-proportion="0.12520593" vertical-offset="0" max-vertical-offset="607">
+          <folding>
+            <element signature="e#245#246#0" expanded="true" />
+            <element signature="e#272#273#0" expanded="true" />
+            <element signature="e#303#304#0" expanded="true" />
+            <element signature="e#330#331#0" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/icf/backend/OperationType.java">
@@ -938,16 +1188,130 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/language/pascal/hello.pas">
+    <entry file="file://$PROJECT_DIR$/src/icf/backend/BackendFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="3" selection-start="64" selection-end="64" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
+        <state line="0" column="20" selection-start="20" selection-end="20" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="475">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/icf/frontend/FrontendFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="52" selection-start="120" selection-end="120" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="551">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/language/Pascal.java">
+    <entry file="file://$PROJECT_DIR$/resources/language/pascal/hello.pas">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="643" selection-end="643" vertical-scroll-proportion="0.24918033" vertical-offset="38" max-vertical-offset="2926">
+        <state line="5" column="16" selection-start="81" selection-end="81" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/icf/frontend/Token.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="0" selection-start="846" selection-end="846" vertical-scroll-proportion="0.0" vertical-offset="516" max-vertical-offset="1159">
+          <folding>
+            <element signature="e#878#879#0" expanded="true" />
+            <element signature="e#905#906#0" expanded="true" />
+            <element signature="e#938#939#0" expanded="true" />
+            <element signature="e#967#968#0" expanded="true" />
+            <element signature="e#999#1000#0" expanded="true" />
+            <element signature="e#1027#1028#0" expanded="true" />
+            <element signature="e#1061#1062#0" expanded="true" />
+            <element signature="e#1094#1095#0" expanded="true" />
+            <element signature="e#1126#1127#0" expanded="true" />
+            <element signature="e#1157#1158#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/icf/frontend/TokenType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="17" selection-start="40" selection-end="40" vertical-scroll-proportion="0.06260297" vertical-offset="0" max-vertical-offset="607">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/language/pascal/scannerTest.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="0" selection-start="678" selection-end="678" vertical-scroll-proportion="1.1894563" vertical-offset="0" max-vertical-offset="836">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/language/pascal/frontend/PascalErrorCode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="27" selection-start="62" selection-end="62" vertical-scroll-proportion="0.0" vertical-offset="1083" max-vertical-offset="1767">
+          <folding>
+            <element signature="e#2974#2975#0" expanded="true" />
+            <element signature="e#3003#3004#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/language/pascal/frontend/PascalToken.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="34" selection-end="34" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="342">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/language/pascal/frontend/PascalErrorHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="20" selection-start="358" selection-end="358" vertical-scroll-proportion="0.0" vertical-offset="191" max-vertical-offset="1026">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#302#303#0" expanded="true" />
+            <element signature="e#335#336#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/language/pascal/frontend/PascalTopDownParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="20" selection-start="474" selection-end="474" vertical-scroll-proportion="0.0" vertical-offset="267" max-vertical-offset="1330">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/language/pascal/Pascal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="68" column="54" selection-start="2648" selection-end="2648" vertical-scroll-proportion="0.0" vertical-offset="811" max-vertical-offset="4275">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/language/pascal/frontend/PascalTokenType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="5" selection-start="1435" selection-end="1435" vertical-scroll-proportion="0.0" vertical-offset="742" max-vertical-offset="1330">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1405#1406#0" expanded="true" />
+            <element signature="e#1434#1435#0" expanded="true" />
+            <element signature="e#1560#1568#0" expanded="true" />
+            <element signature="e#1893#1918#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/language/pascal/frontend/tokens/PascalErrorToken.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="27" selection-start="69" selection-end="69" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="513">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/language/pascal/frontend/PascalLexer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="39" selection-start="318" selection-end="318" vertical-scroll-proportion="0.10714286" vertical-offset="51" max-vertical-offset="1102">
           <folding />
         </state>
       </provider>

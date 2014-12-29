@@ -2,7 +2,7 @@ package icf.frontend;
 
 public class Token {
     protected TokenType type;
-    protected String text;
+    protected String lexeme;
     protected Object value;
     protected Source source;
     protected int lineNumber;
@@ -16,7 +16,7 @@ public class Token {
     }
 
     protected void extract() throws Exception {
-        text = Character.toString(currentChar());
+        lexeme = Character.toString(currentChar());
         value = null;
         nextChar();
     }
@@ -33,8 +33,23 @@ public class Token {
         return source.peekChar();
     }
 
+    public TokenType getType() {
+        return type;
+    }
+
+    public String getLexeme() {
+        return lexeme;
+    }
+
+    public Object getValue() {
+        return value;
+    }
+
     public int getLineNumber() {
         return lineNumber;
     }
 
+    public int getPosition() {
+        return position;
+    }
 }
