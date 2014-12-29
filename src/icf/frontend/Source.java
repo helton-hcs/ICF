@@ -51,7 +51,7 @@ public class Source implements MessageProducer {
         if (line == null)
             return EOF;
         int nextPosition = currentPosition + 1;
-        return nextPosition < line.length() ? line.charAt(currentPosition): EOL;
+        return nextPosition < line.length() ? line.charAt(nextPosition) : EOL;
     }
 
     private void readLine() throws IOException {

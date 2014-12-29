@@ -25,7 +25,7 @@ public class PascalTopDownParser extends Parser {
         try {
             while(!((token = nextToken()) instanceof EofToken)) {
                 TokenType tokenType = token.getType();
-                if (tokenType == PascalTokenType.ERROR) {
+                if (tokenType != PascalTokenType.ERROR) {
                     sendMessage(
                             new Message(
                                 MessageType.TOKEN,

@@ -1,8 +1,10 @@
 package language.pascal.frontend;
 
+import icf.frontend.EofToken;
 import icf.frontend.Lexer;
 import icf.frontend.Source;
 import icf.frontend.Token;
+import language.pascal.frontend.tokens.*;
 
 public class PascalLexer extends Lexer {
 
@@ -13,10 +15,10 @@ public class PascalLexer extends Lexer {
     @Override
     protected Token extractToken() throws Exception {
         skipWhiteSpace();
-        Token token = null;
+        Token token;
         char currentChar = currentChar();
 
-        /*if (currentChar == EOF)
+        if (currentChar == Source.EOF)
             token = new EofToken(source);
         else if (Character.isLetter(currentChar))
             token = new PascalWordToken(source);
@@ -29,7 +31,7 @@ public class PascalLexer extends Lexer {
         else {
             token = new PascalErrorToken(source, PascalErrorCode.INVALID_CHARACTER, Character.toString(currentChar));
             nextChar();
-        }*/
+        }
 
         return token;
     }
