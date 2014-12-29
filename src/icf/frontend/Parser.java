@@ -48,4 +48,12 @@ public abstract class Parser implements MessageProducer {
         messageHandler.sendMessage(message);
     }
 
+    public IntermediateCode getIntermediateCode() {
+        return intermediateCode;
+    }
+
+    public SymbolTable getSymbolTable() {
+        return symbolTable;
+    }
+
 }

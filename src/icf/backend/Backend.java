@@ -17,7 +17,7 @@ public abstract class Backend implements MessageProducer {
     protected SymbolTable symbolTable;
     protected IntermediateCode intermediateCode;
 
-    public abstract void process(SymbolTable symbolTable, IntermediateCode intermediateCode) throws Exception;
+    public abstract void process(IntermediateCode intermediateCode, SymbolTable symbolTable) throws Exception;
 
     public void addMessageListener(MessageListener listener) {
         messageHandler.addListener(listener);

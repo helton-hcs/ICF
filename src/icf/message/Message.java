@@ -9,4 +9,11 @@ public class Message {
         this.body = body;
     }
 
+    public MessageType getType() {
+        return type;
+    }
+
+    public Object getBody() {
+        return body;
+    }
 }

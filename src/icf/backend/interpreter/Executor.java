@@ -9,7 +9,7 @@ import icf.middleware.SymbolTable;
 public class Executor extends Backend {
 
     @Override
-    public void process(SymbolTable symbolTable, IntermediateCode intermediateCode) throws Exception {
+    public void process(IntermediateCode intermediateCode, SymbolTable symbolTable) throws Exception {
         long startTime = System.currentTimeMillis();
         float elapsedTime = (System.currentTimeMillis() - startTime)/1000f;
         int executionCount = 0;
