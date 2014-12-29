@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f20e2732-f417-4ce4-8b32-6caf5b75ac2e" name="Default" comment="" />
+    <list default="true" id="f20e2732-f417-4ce4-8b32-6caf5b75ac2e" name="Default" comment="Added frontend and backend factories&#10;Added base Pascal lexer and parser">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/icf/frontend/token/EofToken.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/icf/frontend/token/Token.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/icf/frontend/token/TokenType.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/icf/backend/Backend.java" afterPath="$PROJECT_DIR$/src/icf/backend/Backend.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/icf/frontend/Lexer.java" afterPath="$PROJECT_DIR$/src/icf/frontend/Lexer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/icf/frontend/Parser.java" afterPath="$PROJECT_DIR$/src/icf/frontend/Parser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="ICF.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -64,10 +73,68 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Backend.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="PascalTopDownParser.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/icf/frontend/pascal/PascalTopDownParser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="0" selection-start="599" selection-end="917" vertical-scroll-proportion="0.0" vertical-offset="437" max-vertical-offset="874">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CodeGenerator.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/icf/backend/compiler/CodeGenerator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="0" selection-start="241" selection-end="794" vertical-scroll-proportion="0.0" vertical-offset="190" max-vertical-offset="627">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Lexer.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/icf/frontend/Lexer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="30" column="0" selection-start="624" selection-end="624" vertical-scroll-proportion="0.81280786" vertical-offset="75" max-vertical-offset="684">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Executor.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/icf/backend/interpreter/Executor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="0" selection-start="238" selection-end="238" vertical-scroll-proportion="0.0" vertical-offset="171" max-vertical-offset="646">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BackendFactory.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/icf/backend/BackendFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="0" selection-start="137" selection-end="137" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="475">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Backend.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/icf/backend/Backend.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="27" selection-start="120" selection-end="120" vertical-scroll-proportion="0.082878955" vertical-offset="0" max-vertical-offset="917">
+            <state line="19" column="25" selection-start="526" selection-end="526" vertical-scroll-proportion="0.0" vertical-offset="132" max-vertical-offset="741">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FrontendFactory.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/icf/frontend/FrontendFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="37" selection-start="100" selection-end="100" vertical-scroll-proportion="0.0" vertical-offset="57" max-vertical-offset="551">
               <folding />
             </state>
           </provider>
@@ -80,6 +147,9 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
@@ -89,23 +159,41 @@
         <option value="$PROJECT_DIR$/src/icf/message/Message.java" />
         <option value="$PROJECT_DIR$/src/icf/message/MessageType.java" />
         <option value="$PROJECT_DIR$/src/icf/message/MessageHandler.java" />
-        <option value="$PROJECT_DIR$/src/icf/frontend/Lexer.java" />
         <option value="$PROJECT_DIR$/src/icf/frontend/Source.java" />
         <option value="$PROJECT_DIR$/src/icf/message/MessageProducer.java" />
         <option value="$PROJECT_DIR$/src/icf/frontend/Parser.java" />
         <option value="$PROJECT_DIR$/src/icf/middleware/ICode.java" />
         <option value="$PROJECT_DIR$/src/icf/middleware/IntermediateCode.java" />
+        <option value="$PROJECT_DIR$/src/icf/frontend/Lexer.java" />
+        <option value="$PROJECT_DIR$/src/icf/frontend/token/Token.java" />
+        <option value="$PROJECT_DIR$/src/icf/frontend/token/EofToken.java" />
+        <option value="$PROJECT_DIR$/src/languages/pascal/frontend/PascalLexer.java" />
+        <option value="$PROJECT_DIR$/src/languages/pascal/frontend/PascalParserTD.java" />
+        <option value="$PROJECT_DIR$/src/languages/pascal/frontend/FronEndFactory.java" />
+        <option value="$PROJECT_DIR$/src/languages/pascal/frontend/FrontEndFactory.java" />
+        <option value="$PROJECT_DIR$/src/icf/frontend/Languages.java" />
+        <option value="$PROJECT_DIR$/src/icf/frontend/Language.java" />
+        <option value="$PROJECT_DIR$/src/icf/frontend/ParserTypes.java" />
+        <option value="$PROJECT_DIR$/src/icf/frontend/ParserType.java" />
+        <option value="$PROJECT_DIR$/src/icf/frontend/pascal/PascalParserTD.java" />
+        <option value="$PROJECT_DIR$/src/icf/frontend/pascal/PascalTopDownParser.java" />
         <option value="$PROJECT_DIR$/src/icf/backend/Backend.java" />
+        <option value="$PROJECT_DIR$/src/icf/backend/compiler/CodeGenerator.java" />
+        <option value="$PROJECT_DIR$/src/icf/backend/interpreter/Executor.java" />
+        <option value="$PROJECT_DIR$/src/icf/frontend/FrontEndFactory.java" />
+        <option value="$PROJECT_DIR$/src/icf/backend/OperationType.java" />
+        <option value="$PROJECT_DIR$/src/icf/backend/BackendFactory.java" />
+        <option value="$PROJECT_DIR$/src/icf/frontend/FrontendFactory.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="3286" />
-    <option name="y" value="-1056" />
-    <option name="width" value="1920" />
-    <option name="height" value="1056" />
+    <option name="x" value="-1" />
+    <option name="y" value="-4" />
+    <option name="width" value="1922" />
+    <option name="height" value="1085" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -118,7 +206,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
-    <option name="STATE" value="2" />
+    <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
@@ -236,7 +324,111 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="types" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ICF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ICF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="icf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pascal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ICF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ICF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="icf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ICF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ICF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="icf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="interpreter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ICF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ICF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="icf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="compiler" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -260,6 +452,8 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="OverrideImplement.combined" value="true" />
+    <property name="OverrideImplement.overriding.sorted" value="false" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="Remote" factoryName="Remote">
@@ -480,28 +674,46 @@
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="f20e2732-f417-4ce4-8b32-6caf5b75ac2e" name="Default" comment="" />
       <created>1419798318283</created>
       <updated>1419798318283</updated>
       <workItem from="1419798319789" duration="4280000" />
-      <workItem from="1419805993460" duration="2220000" />
+      <workItem from="1419805993460" duration="6160000" />
+      <workItem from="1419812202062" duration="119000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6500000" />
+    <option name="totallyTimeSpent" value="10559000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="3286" y="-1056" width="1920" height="1056" extended-state="6" />
+    <frame x="-1" y="-4" width="1922" height="1085" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Tool Output" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32944915" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -524,7 +736,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32943678" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -539,6 +751,9 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="Added frontend and backend factories&#10;Added base Pascal lexer and parser" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added frontend and backend factories&#10;Added base Pascal lexer and parser" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -548,6 +763,43 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/icf/frontend/pascal/PascalTopDownParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="0" selection-start="599" selection-end="917" vertical-scroll-proportion="0.0" vertical-offset="437" max-vertical-offset="874">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/icf/backend/compiler/CodeGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="241" selection-end="794" vertical-scroll-proportion="0.0" vertical-offset="190" max-vertical-offset="627">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/icf/backend/interpreter/Executor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="0" selection-start="238" selection-end="238" vertical-scroll-proportion="0.0" vertical-offset="171" max-vertical-offset="646">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/icf/backend/BackendFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="20" selection-start="413" selection-end="413" vertical-scroll-proportion="0.0" vertical-offset="247" max-vertical-offset="475">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/icf/frontend/FrontendFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="37" selection-start="100" selection-end="100" vertical-scroll-proportion="0.0" vertical-offset="57" max-vertical-offset="551">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/icf/frontend/Parser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="21" selection-start="21" selection-end="21" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="684">
@@ -571,44 +823,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/icf/frontend/token/Token.java">
+    <entry file="file://$PROJECT_DIR$/src/icf/frontend/Token.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="0" selection-start="22" selection-end="22" vertical-scroll-proportion="0.0" vertical-offset="19" max-vertical-offset="798">
-          <folding />
+          <folding>
+            <element signature="e#874#875#0" expanded="true" />
+            <element signature="e#907#908#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/icf/frontend/token/TokenType.java">
+    <entry file="file://$PROJECT_DIR$/src/icf/frontend/TokenType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="0" selection-start="54" selection-end="54" vertical-scroll-proportion="0.0" vertical-offset="76" max-vertical-offset="190">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/icf/frontend/token/EofToken.java">
+    <entry file="file://$PROJECT_DIR$/src/icf/frontend/EofToken.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="0" selection-start="152" selection-end="152" vertical-scroll-proportion="0.0" vertical-offset="152" max-vertical-offset="361">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/icf/frontend/token/TokenType.java">
+    <entry file="file://$PROJECT_DIR$/src/icf/frontend/TokenType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="0" selection-start="54" selection-end="54" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="190">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/icf/frontend/token/Token.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="22" selection-end="22" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="798">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/icf/frontend/token/EofToken.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="152" selection-end="152" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="361">
           <folding />
         </state>
       </provider>
@@ -620,32 +861,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/icf/frontend/Lexer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="31" selection-start="147" selection-end="147" vertical-scroll-proportion="0.12431843" vertical-offset="0" max-vertical-offset="917">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/icf/frontend/Parser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="44" selection-start="358" selection-end="369" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1102">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/icf/middleware/SymbolTable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="1" selection-start="57" selection-end="57" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="190">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/icf/frontend/Source.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="105" selection-end="105" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1843">
           <folding />
         </state>
       </provider>
@@ -687,9 +905,118 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/icf/frontend/EofToken.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="28" selection-end="28" vertical-scroll-proportion="0.020719739" vertical-offset="0" max-vertical-offset="917">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/icf/frontend/Token.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="57" selection-end="57" vertical-scroll-proportion="0.062159214" vertical-offset="0" max-vertical-offset="917">
+          <folding>
+            <element signature="e#874#875#0" expanded="true" />
+            <element signature="e#907#908#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/icf/frontend/pascal/PascalLexer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="0" selection-start="386" selection-end="386" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="608">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/icf/frontend/types/LanguageType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="70" selection-end="70" vertical-scroll-proportion="0.10359869" vertical-offset="0" max-vertical-offset="917">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/icf/frontend/types/ParserType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="18" selection-start="18" selection-end="18" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="228">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/icf/frontend/Source.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="0" selection-start="459" selection-end="502" vertical-scroll-proportion="0.31079608" vertical-offset="0" max-vertical-offset="1843">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/icf/frontend/Parser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="0" selection-start="947" selection-end="1282" vertical-scroll-proportion="0.606325" vertical-offset="166" max-vertical-offset="1083">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/icf/frontend/pascal/PascalTopDownParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="0" selection-start="599" selection-end="917" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="874">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/icf/backend/compiler/CodeGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="241" selection-end="794" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="627">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/icf/backend/interpreter/Executor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="0" selection-start="238" selection-end="238" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/icf/backend/OperationType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="4" selection-start="54" selection-end="54" vertical-scroll-proportion="0.062159214" vertical-offset="0" max-vertical-offset="917">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/icf/frontend/FrontendFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="37" selection-start="100" selection-end="100" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="551">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/icf/backend/BackendFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="137" selection-end="137" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="475">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/icf/backend/Backend.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="27" selection-start="120" selection-end="120" vertical-scroll-proportion="0.082878955" vertical-offset="0" max-vertical-offset="917">
+        <state line="19" column="25" selection-start="526" selection-end="526" vertical-scroll-proportion="0.0" vertical-offset="132" max-vertical-offset="741">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/icf/frontend/Lexer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="0" selection-start="624" selection-end="624" vertical-scroll-proportion="0.81280786" vertical-offset="75" max-vertical-offset="684">
           <folding />
         </state>
       </provider>

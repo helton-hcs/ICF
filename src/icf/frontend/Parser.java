@@ -1,6 +1,5 @@
 package icf.frontend;
 
-import icf.frontend.token.Token;
 import icf.message.Message;
 import icf.message.MessageHandler;
 import icf.message.MessageListener;

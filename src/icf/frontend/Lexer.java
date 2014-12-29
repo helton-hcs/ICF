@@ -1,7 +1,5 @@
 package icf.frontend;
 
-import icf.frontend.token.Token;
-
 public abstract class Lexer {
     protected Source source;
     private Token currentToken;
@@ -19,7 +17,7 @@ public abstract class Lexer {
         return currentToken;
     }
 
-    public abstract Token extractToken() throws Exception;
+    protected abstract Token extractToken() throws Exception;
 
     public char currentChar() throws Exception {
         return source.currentChar();
