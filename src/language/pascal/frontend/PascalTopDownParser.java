@@ -3,6 +3,7 @@ package language.pascal.frontend;
 import icf.frontend.*;
 import icf.message.Message;
 import icf.message.MessageType;
+import icf.middleware.symbolTable.SymbolTableEntry;
 
 import java.io.IOException;
 
@@ -25,21 +26,14 @@ public class PascalTopDownParser extends Parser {
         try {
             while(!((token = nextToken()) instanceof EofToken)) {
                 TokenType tokenType = token.getType();
-                if (tokenType != PascalTokenType.ERROR) {
-                    sendMessage(
-                            new Message(
-                                MessageType.TOKEN,
-                                new Object[] {
-                                        token.getLineNumber(),
-                                        token.getPosition(),
-                                        tokenType,
-                                        token.getLexeme(),
-                                        token.getValue()
-                                }
-                            )
-                    );
+                if (tokenType == PascalTokenType.IDENTIFIER) {
+                    String name = token.getLexeme().toLowerCase();
+                    SymbolTableEntry entry = symbolTableStack.lookup(name);
+                    if (entry == null)
+                        entry = symbolTableStack.enterLocal(name);
+                    entry.appendLineNumber(token.getLineNumber());
                 }
-                else
+                else if (tokenType == PascalTokenType.ERROR)
                     errorHandler.flag(token, (PascalErrorCode)token.getValue(), this);
             }
 

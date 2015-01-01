@@ -4,15 +4,16 @@ import icf.message.Message;
 import icf.message.MessageHandler;
 import icf.message.MessageListener;
 import icf.message.MessageProducer;
-import icf.middleware.IntermediateCode;
-import icf.middleware.SymbolTable;
+import icf.middleware.intermediateCode.IntermediateCode;
+import icf.middleware.symbolTable.SymbolTableFactory;
+import icf.middleware.symbolTable.SymbolTableStack;
 
 public abstract class Parser implements MessageProducer {
-    protected static SymbolTable symbolTable;
+    protected static SymbolTableStack symbolTableStack;
     protected static MessageHandler messageHandler;
 
     static {
-        symbolTable = null;
+        symbolTableStack = SymbolTableFactory.createSymbolTableStack();
         messageHandler = new MessageHandler();
     }
 
@@ -52,8 +53,8 @@ public abstract class Parser implements MessageProducer {
         return intermediateCode;
     }
 
-    public SymbolTable getSymbolTable() {
-        return symbolTable;
+    public SymbolTableStack getSymbolTableStack() {
+        return symbolTableStack;
     }
 
 }

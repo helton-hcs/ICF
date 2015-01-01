@@ -14,7 +14,7 @@ public class PascalLexer extends Lexer {
 
     @Override
     protected Token extractToken() throws Exception {
-        skipWhiteSpace();
+        skipWhiteSpaceAndComments();
         Token token;
         char currentChar = currentChar();
 
@@ -36,7 +36,7 @@ public class PascalLexer extends Lexer {
         return token;
     }
 
-    private void skipWhiteSpace() throws Exception {
+    private void skipWhiteSpaceAndComments() throws Exception {
         char currentChar = currentChar();
 
         while (Character.isWhitespace(currentChar) || (currentChar == '{')) {
@@ -44,9 +44,8 @@ public class PascalLexer extends Lexer {
                 do {
                     currentChar = nextChar();
                 } while ((currentChar != '}') && (currentChar != Source.EOF));
-                if (currentChar == '}') {
+                if (currentChar == '}')
                     currentChar = nextChar();
-                }
             }
             else
                 currentChar = nextChar();

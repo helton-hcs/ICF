@@ -10,8 +10,9 @@ import icf.frontend.TokenType;
 import icf.frontend.types.LanguageType;
 import icf.frontend.types.ParserType;
 import icf.message.MessageType;
-import icf.middleware.IntermediateCode;
-import icf.middleware.SymbolTable;
+import icf.middleware.intermediateCode.IntermediateCode;
+import icf.middleware.symbolTable.SymbolTableStack;
+import icf.util.CrossReferencer;
 import language.pascal.frontend.PascalTokenType;
 
 import java.io.BufferedReader;
@@ -21,7 +22,7 @@ public class Pascal {
     private Parser parser;
     private Source source;
     private IntermediateCode intermediateCode;
-    private SymbolTable symbolTable;
+    private SymbolTableStack symbolTableStack;
     private Backend backend;
 
     public Pascal(OperationType operationType, String filePath, String flags)
@@ -149,9 +150,14 @@ public class Pascal {
             source.close();
 
             intermediateCode = parser.getIntermediateCode();
-            symbolTable = parser.getSymbolTable();
+            symbolTableStack = parser.getSymbolTableStack();
 
-            backend.process(intermediateCode, symbolTable);
+            if (xref) {
+                CrossReferencer crossReferencer = new CrossReferencer();
+                crossReferencer.print(symbolTableStack);
+            }
+
+            backend.process(intermediateCode, symbolTableStack);
         }
         catch (Exception ex) {
             System.out.println("***** Internal translator error. *****");

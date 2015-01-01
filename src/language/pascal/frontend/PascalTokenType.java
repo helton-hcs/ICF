@@ -44,16 +44,15 @@ public enum PascalTokenType implements TokenType {
     }
 
     // Set of lower-cased Pascal reserved word text strings.
-    public static HashSet<String> RESERVED_WORDS = new HashSet<String>();
+    public static HashSet<String> RESERVED_WORDS = new HashSet<>();
 
     static {
         PascalTokenType values[] = PascalTokenType.values();
-        for (int i = FIRST_RESERVED_INDEX; i <= LAST_RESERVED_INDEX; ++i) {
+        for (int i = FIRST_RESERVED_INDEX; i <= LAST_RESERVED_INDEX; ++i)
             RESERVED_WORDS.add(values[i].getLexeme().toLowerCase());
-        }
     }
 
-    public static Hashtable<String, PascalTokenType> SPECIAL_SYMBOLS = new Hashtable<String, PascalTokenType>();
+    public static Hashtable<String, PascalTokenType> SPECIAL_SYMBOLS = new Hashtable<>();
 
     static {
         PascalTokenType values[] = PascalTokenType.values();
